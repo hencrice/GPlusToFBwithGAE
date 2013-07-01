@@ -1,0 +1,9 @@
+application: wahaha-gplus-to-fb # give your app an unique identifier
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /.*
+  script: GplusToFBwithGAE.application #you can replace myNewApp with the folder name you created in step 9

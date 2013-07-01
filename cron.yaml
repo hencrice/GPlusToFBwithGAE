@@ -1,0 +1,4 @@
+cron:
+- description: check my G+ stream for new post
+  url: / # This is the path which cron service will periodically trigger
+  schedule: every 1 minutes # Feel free to modify the schedule
