@@ -1,5 +1,5 @@
 application: wahaha-gplus-to-fb # give your app an unique identifier
-version: 1
+version: 2
 runtime: python27
 api_version: 1
 threadsafe: true

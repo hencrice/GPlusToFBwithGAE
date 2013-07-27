@@ -73,6 +73,8 @@ class FetchAndRepost(webapp2.RequestHandler):
                 if 'attachments' in acti['object']:
                     if 'image' in acti['object']['attachments'][0]:
                         respost['imgUrl'] = acti['object']['attachments'][0]['image']['url'] # if there's attachment and it has pic, overwrite the original picture (which should be my face)
+                    elif 'thumbnails' in acti['object']['attachments'][0]:
+                        respost['imgUrl'] = acti['object']['attachments'][0]['thumbnails'][0]['image']['url']
                     if 'displayName' in acti['object']['attachments'][0]:
                         respost['urlDescription'] = acti['object']['attachments'][0]['displayName']
                 repostQueue.append(respost)
